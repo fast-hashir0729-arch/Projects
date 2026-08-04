@@ -8,7 +8,6 @@ A sleek, terminal/split-flap inspired currency converter that fetches **live exc
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
 
-<!-- 🔴 Replace this with an actual screenshot or GIF of the app once it's live -->
 <p align="center">
   <img src="./preview.png" alt="Exchange app preview" width="600">
 </p>
