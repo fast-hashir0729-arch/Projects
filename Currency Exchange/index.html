@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exchange — Currency Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header class="ticker-bar">
+    <div class="ticker-track">
+    </div>
+  </header>
+  <div class="perforation"></div>
+
+
+  <div class="app-shell">
+
+    <div class="brand">
+      <span class="brand-mark">✳</span>
+      <h1>Exchange</h1>
+      <p class="brand-sub">A live currency conversion board</p>
+    </div>
+
+    <main class="converter-card" id="converter">
+
+      <section class="panel panel-from" data-panel="from">
+        <div class="panel-head">
+          <span class="panel-label">You send</span>
+          <img class="panel-flag" id="flag-from" src="https://flagsapi.com/US/flat/64.png" />
+        </div>
+        <div class="panel-body">
+          <select id="currency-from" class="currency-select">
+          </select>
+          <input type="number" id="amount-from" class="amount-input" value="1000" min="0" step="any" inputmode="decimal" placeholder="0.00">
+        </div>
+        <div class="quick-amounts">
+          <button type="button" class="chip" data-amount="100">100</button>
+          <button type="button" class="chip" data-amount="500">500</button>
+          <button type="button" class="chip" data-amount="1000">1,000</button>
+          <button type="button" class="chip" data-amount="5000">5,000</button>
+        </div>
+      </section>
+
+      <div class="swap-rail">
+        <div class="rail-line"></div>
+        <button type="button" id="swap-btn" class="swap-btn" aria-label="Swap currencies">⇅</button>
+        <div class="rail-line"></div>
+      </div>
+
+      <section class="panel panel-to" data-panel="to">
+        <div class="panel-head">
+          <span class="panel-label">They receive</span>
+          <img class="panel-flag" id="flag-to" src="https://flagsapi.com/PK/flat/64.png" />
+        </div>
+        <div class="panel-body">
+          <select id="currency-to" class="currency-select">
+          </select>
+          <input type="number" id="amount-to" class="amount-input result" value="921.40" readonly placeholder="0.00">
+        </div>
+        <p class="panel-hint" id="rate-note">Updates automatically as you type</p>
+      </section>
+
+    </main>
+
+    <div class="rate-strip" id="rate-strip">
+      <!-- <span class="rate-eq" id="rate-display">1 USD = 284 PKR</span> -->
+      <span class="dot">·</span>
+      <span class="rate-trend up" id="rate-trend">▲ 0.36%</span>
+      <span class="dot">·</span>
+      <span class="rate-updated" id="last-updated">Updated just now</span>
+    </div>
+
+    <button type="button" id="convert-btn" class="convert-btn">Convert</button>
+
+    <footer class="board-footer">
+      <p>Exchange rates are updated automatically - Last updated: <span id="last-updated">Loading...</span></p>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
