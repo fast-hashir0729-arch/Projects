@@ -14,7 +14,7 @@ A sleek, terminal/split-flap inspired currency converter that fetches **live exc
 </p>
 
 <p align="center">
-  <a href="#">🔗 Live Demo</a> ·
+  <a href="https://fast-hashir0729-arch.github.io/Projects/Currency%20Exchange/">🔗 Live Demo</a> ·
   <a href="#features">✨ Features</a> ·
   <a href="#tech-stack">🛠 Tech Stack</a> ·
   <a href="#getting-started">🚀 Getting Started</a>
@@ -89,12 +89,10 @@ No installation or build step required — it's plain HTML/CSS/JS.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/exchange.git
+git clone https://github.com/fast-hashir0729-arch/Projects/tree/main/Currency%20Exchange
 
-# 2. Move into the project folder
-cd exchange
 
-# 3. Open index.html in your browser
+# 2. Open index.html in your browser
 #    (or use a local dev server, e.g. the VS Code "Live Server" extension)
 ```
 
