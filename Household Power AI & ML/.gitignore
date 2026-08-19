@@ -1,0 +1,31 @@
+# Dataset (too large for GitHub — see data/README.md for download instructions)
+data/*.txt
+data/*.csv
+data/*.zip
+
+# Generated outputs
+outputs/figures/*.png
+outputs/models/*.joblib
+!outputs/figures/.gitkeep
+!outputs/models/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
